@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Attendance</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Attendance.css">
+  </head>
+  <body>
+    <div class="title">ATTENDANCE</div>
+    <div class="general">
+      <div class="name">Logesh P</div>
+      <div class="sem">Sem: 1</div>
+    </div>
+    <div class="periods_container">
+      <div class="periods">
+        <div class="total_periods">Total Periods: 36</div>
+        <div class="periods_percentage">Percentage: 88.8%</div>
+        <div class="attend_not">
+          <div class="attended_periods">Periods Attended: 32</div>
+          <div class="absent_periods">Periods Absent: 4</div>  
+        </div>
+      </div>
+    </div>
+    <p>Individual Subjects</p>
+    <div class="subjects">
+      <div class="sub">
+        <p>PHYSICS</p>
+        <p class="sub_percentage1">Percentage: 85%</p>
+        <div class="sub_phy">
+          <div class="attended_periods_phy">Periods Attended: 32</div>
+          <div class="absent_periods_phy">Periods Absent: 4</div> 
+        </div>
+        <div class="buttons_container">
+          <div class="add_present" onclick="
+            update_attendance('sub_phy','add_present');
+            display('sub_phy');
+          ">
+            Add Present Period
+          </div>
+          <div class="add_absent" onclick="
+            update_attendance('sub_phy','add_absent');
+            display('sub_phy');
+          ">
+            Add Absent Period
+          </div>
+          <div class="remove_present" onclick="
+            update_attendance('sub_phy','remove_present');
+            display('sub_phy');
+          ">
+            Remove Present
+          </div>
+          <div class="remove_absent" onclick="
+            update_attendance('sub_phy','remove_absent');
+            display('sub_phy');
+          ">
+            Remove Absent
+          </div>
+        </div>
+        <p>CHEMISTRY</p>
+        <p class="sub_percentage2">Percentage: 85%</p>
+        <div class="sub_chem">
+          <div class="attended_periods_chem">Periods Attended: 32</div>
+          <div class="absent_periods_chem">Periods Absent: 4</div> 
+        </div>
+        <div class="buttons_container">
+          <div class="add_present" onclick="
+          update_attendance('sub_chem','add_present');
+          display('sub_chem');
+        ">
+            Add Present Period
+          </div>
+          <div class="add_absent" onclick="
+          update_attendance('sub_chem','add_absent');
+          display('sub_chem');
+        ">
+            Add Absent Period
+          </div>
+          <div class="remove_present" onclick="
+          update_attendance('sub_chem','remove_present');
+          display('sub_chem');
+        ">
+            Remove Present
+          </div>
+          <div class="remove_absent" onclick="
+          update_attendance('sub_chem','remove_absent');
+          display('sub_chem');
+        ">
+            Remove Absent
+          </div>
+        </div>
+        <p>MATHS</p>
+        <p class="sub_percentage3">Percentage: 85%</p>
+        <div class="sub_maths">
+          <div class="attended_periods_maths">Periods Attended: 32</div>
+          <div class="absent_periods_maths">Periods Absent: 4</div> 
+        </div>
+        <div class="buttons_container">
+          <div class="add_present" onclick="
+          update_attendance('sub_maths','add_present');
+          display('sub_maths');
+        ">
+            Add Present Period
+          </div>
+          <div class="add_absent" onclick="
+          update_attendance('sub_maths','add_absent');
+          display('sub_maths');
+        ">
+            Add Absent Period
+          </div>
+          <div class="remove_present" onclick="
+          update_attendance('sub_maths','remove_present');
+          display('sub_maths');
+        ">
+            Remove Present
+          </div>
+          <div class="remove_absent" onclick="
+          update_attendance('sub_maths','remove_absent');
+          display('sub_maths');
+        ">
+            Remove Absent
+          </div>
+        </div>
+        <p>PROGRAM FOR PROBLEM SOLVING</p>
+        <p class="sub_percentage4">Percentage: 85%</p>
+        <div class="sub_prog">
+          <div class="attended_periods_prog">Periods Attended: 32</div>
+          <div class="absent_periods_prog">Periods Absent: 4</div> 
+        </div>
+        <div class="buttons_container">
+          <div class="add_present" onclick="
+          update_attendance('sub_prog','add_present');
+          display('sub_prog');
+        ">
+            Add Present Period
+          </div>
+          <div class="add_absent" onclick="
+          update_attendance('sub_prog','add_absent');
+          display('sub_prog');
+        ">
+            Add Absent Period
+          </div>
+          <div class="remove_present" onclick="
+          update_attendance('sub_prog','remove_present');
+          display('sub_prog');
+        ">
+            Remove Present
+          </div>
+          <div class="remove_absent" onclick="
+          update_attendance('sub_prog','remove_absent');
+          display('sub_prog');
+        ">
+            Remove Absent
+          </div>
+        </div>
+        <p>TAMIL</p>
+        <p class="sub_percentage5">Percentage: 85%</p>
+        <div class="sub_tamil">
+          <div class="attended_periods_tamil">Periods Attended: 32</div>
+          <div class="absent_periods_tamil">Periods Absent: 4</div> 
+        </div>
+        <div class="buttons_container">
+          <div class="add_present" onclick="
+          update_attendance('sub_tamil','add_present');
+          display('sub_tamil');
+        ">
+            Add Present Period
+          </div>
+          <div class="add_absent" onclick="
+          update_attendance('sub_tamil','add_absent');
+          display('sub_tamil');
+        ">
+            Add Absent Period
+          </div>
+          <div class="remove_present" onclick="
+          update_attendance('sub_tamil','remove_present');
+          display('sub_tamil');
+        ">
+            Remove Present
+          </div>
+          <div class="remove_absent" onclick="
+          update_attendance('sub_tamil','remove_absent');
+          display('sub_tamil');
+        ">
+            Remove Absent
+          </div>
+        </div>
+      </div>
+      <p>Lab Attendance</p>
+      <div class="lab">
+        <p>COMMUNICATION LAB</p>
+        <p class="sub_percentage6">Percentage: 85%</p>
+        <div class="lab_comm">
+          <div class="attended_periods_comm">Periods Attended: 32</div>
+          <div class="absent_periods_comm">Periods Absent: 4</div> 
+        </div>
+        <div class="buttons_container">
+          <div class="add_present" onclick="
+          update_attendance('lab_comm','add_present');
+          display('lab_comm');
+        ">
+            Add Present Period
+          </div>
+          <div class="add_absent" onclick="
+          update_attendance('lab_comm','add_absent');
+          display('lab_comm');
+        ">
+            Add Absent Period
+          </div>
+          <div class="remove_present" onclick="
+          update_attendance('lab_comm','remove_present');
+          display('lab_comm');
+        ">
+            Remove Present
+          </div>
+          <div class="remove_absent" onclick="
+          update_attendance('lab_comm','remove_absent');
+          display('lab_comm');
+        ">
+            Remove Absent
+          </div>
+        </div>
+        <p>ELECTRICAL LAB</p>
+        <p class="sub_percentage7">Percentage: 85%</p>
+        <div class="lab_elec">
+          <div class="attended_periods_elec">Periods Attended: 32</div>
+          <div class="absent_periods_elec">Periods Absent: 4</div> 
+        </div>
+        <div class="buttons_container">
+          <div class="add_present" onclick="
+          update_attendance('lab_elec','add_present');
+          display('lab_elec');
+        ">
+            Add Present Period
+          </div>
+          <div class="add_absent" onclick="
+          update_attendance('lab_elec','add_absent');
+          display('lab_elec');
+        ">
+            Add Absent Period
+          </div>
+          <div class="remove_present" onclick="
+          update_attendance('lab_elec','remove_present');
+          display('lab_elec');
+        ">
+            Remove Present
+          </div>
+          <div class="remove_absent" onclick="
+          update_attendance('lab_elec','remove_absent');
+          display('lab_elec');
+        ">
+            Remove Absent
+          </div>
+        </div>
+        <p>WORKSHOP LAB</p>
+        <p class="sub_percentage8">Percentage: 85%</p>
+        <div class="lab_workshop">
+          <div class="attended_periods_workshop">Periods Attended: 32</div>
+          <div class="absent_periods_workshop">Periods Absent: 4</div> 
+        </div>
+        <div class="buttons_container">
+          <div class="add_present" onclick="
+          update_attendance('lab_workshop','add_present');
+          display('lab_workshop');
+        ">
+            Add Present Period
+          </div>
+          <div class="add_absent" onclick="
+          update_attendance('lab_workshop','add_absent');
+          display('lab_workshop');
+        ">
+            Add Absent Period
+          </div>
+          <div class="remove_present" onclick="
+          update_attendance('lab_workshop','remove_present');
+          display('lab_workshop');
+        ">
+            Remove Present
+          </div>
+          <div class="remove_absent" onclick="
+          update_attendance('lab_workshop','remove_absent');
+          display('lab_workshop');
+        ">
+            Remove Absent
+          </div>
+        </div>
+        <p>Extras</p>
+        <div class="extras">
+          <div class="attended_periods_extras">Periods Attended: 32</div>
+          <div class="absent_periods_extras">Periods Absent: 4</div> 
+        </div>
+        <div class="buttons_container">
+          <div class="add_present" onclick="
+          update_attendance('extras','add_present');
+          display('extras');
+        ">
+            Add Present Period
+          </div>
+          <div class="add_absent" onclick="
+          update_attendance('extras','add_absent');
+          display('extras');
+        ">
+            Add Absent Period
+          </div>
+          <div class="remove_present" onclick="
+          update_attendance('extras','remove_present');
+          display('extras');
+        ">
+            Remove Present
+          </div>
+          <div class="remove_absent" onclick="
+          update_attendance('extras','remove_absent');
+          display('extras');
+        ">
+            Remove Absent
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="Attendance.js"></script>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+body{
+  background-color: black;
+  color: white;
+  margin:0;
+  user-select: none;
+}
+
+p{
+  font-family: Doto;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.title{
+  display: flex;
+  justify-content: space-around;
+  font-size: 70px;
+  font-family: Doto;
+  margin-bottom: 20px;
+}
+
+.general{
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+  font-family: Sour Gummy;
+  margin-bottom: 25px;
+}
+
+.periods_container{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  border: 2px, solid, rgba(255, 255, 255, 0.096);
+  border-left: none;
+  border-right: none;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.total_periods, .periods_percentage{
+  font-size: 70px;
+  font-family: sour gummy;
+  color: lightskyblue;
+}
+
+.attend_not{
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+  margin-top: 10px;
+
+}
+
+.attended_periods,.attended_periods_phy,.attended_periods_chem,.attended_periods_maths,.attended_periods_prog,.attended_periods_elec,.attended_periods_workshop,.attended_periods_comm,.attended_periods_extras,.attended_periods_tamil{
+  color: rgb(155, 228, 155);
+  font-family: sour gummy;
+  font-size: 25px;
+}
+
+.absent_periods,.absent_periods_phy,.absent_periods_chem,.absent_periods_maths,.absent_periods_prog,.absent_periods_elec,.absent_periods_workshop,.absent_periods_comm,.absent_periods_extras,.absent_periods_tamil{
+  color:lightcoral;
+  font-family: sour gummy; 
+  font-size: 25px;
+  padding-left: 20px;
+}
+
+.sub_phy, .sub_chem, .sub_maths, .sub_prog, .sub_tamil, .lab_comm , .lab_elec, .lab_workshop, .extras{
+  display: flex;
+  justify-content: center;
+}
+
+.buttons_container{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.212);
+  padding-bottom: 20px;
+}
+
+.add_present, .add_absent, .remove_present, .remove_absent{
+  background-color: rgb(59, 59, 59);
+  padding: 10px 20px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-family: Doto;
+  transition: background-color 0.5s;
+  user-select: none;
+}
+.add_absent, .remove_present, .remove_absent{
+  margin-left: 20px;
+}
+
+.add_present:hover, .add_absent:hover{
+  background-color: rgba(28, 196, 28, 0.336);
+}
+
+.remove_present:hover, .remove_absent:hover{
+  background-color: rgba(255, 119, 95, 0.356);
+}
+
+.sub_percentage1,.sub_percentage2,.sub_percentage3,.sub_percentage4,.sub_percentage5,.sub_percentage6,.sub_percentage7,.sub_percentage8{
+  color:rgb(155, 228, 155);
+  font-size: 25px;
+  font-family: Doto;
+  font-weight: bold;
+}
