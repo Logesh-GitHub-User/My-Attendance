@@ -14,10 +14,25 @@
     <link rel="stylesheet" href="Attendance.css">
   </head>
   <body>
-    <div class="title">ATTENDANCE</div>
+    <div class="title" id="top">ATTENDANCE</div>
     <div class="general">
       <div class="name">Logesh P</div>
-      <div class="sem">Sem: 1</div>
+      <div class="sem">Sem: 2</div>
+    </div>
+
+    <div class="subject_id_container">
+      <a href="#maths" class="subject_id">MATHEMATICS-2</a>
+      <a href="#tamil" class="subject_id">TAMIL</a>
+      <a href="#civil" class="subject_id">BASIC CIVIL</a>
+      <a href="#mech" class="subject_id">BASIC MECH</a>
+      <a href="#english" class="subject_id">ENGLISH</a>
+    </div>
+
+    <div class="subject_id_container">
+      <a href="#physicslab" class="subject_id">PHYSICS LAB</a>
+      <a href="#chemistrylab" class="subject_id">CHEMISTRY LAB</a>
+      <a href="#graphics" class="subject_id">ENGG GRAPHICS</a>
+      <a href="#programminglab" class="subject_id">PROG. LAB</a>
     </div>
     <div class="periods_container">
       <div class="periods">
@@ -32,8 +47,8 @@
     <p>Individual Subjects</p>
     <div class="subjects">
       <div class="sub">
-        <p>PHYSICS</p>
-        <p class="sub_percentage1">Percentage: 85%</p>
+        <p id="maths">MATHEMATICS-2</p>
+        <p class="sub_percentage1 percent">Percentage: 85%</p>
         <div class="sub_phy">
           <div class="attended_periods_phy">Periods Attended: 32</div>
           <div class="absent_periods_phy">Periods Absent: 4</div> 
@@ -64,8 +79,8 @@
             Remove Absent
           </div>
         </div>
-        <p>CHEMISTRY</p>
-        <p class="sub_percentage2">Percentage: 85%</p>
+        <p id="tamil">TAMIL</p>
+        <p class="sub_percentage2 percent">Percentage: 85%</p>
         <div class="sub_chem">
           <div class="attended_periods_chem">Periods Attended: 32</div>
           <div class="absent_periods_chem">Periods Absent: 4</div> 
@@ -96,8 +111,8 @@
             Remove Absent
           </div>
         </div>
-        <p>MATHS</p>
-        <p class="sub_percentage3">Percentage: 85%</p>
+        <p id="civil">BASIC CIVIL</p>
+        <p class="sub_percentage3 percent">Percentage: 85%</p>
         <div class="sub_maths">
           <div class="attended_periods_maths">Periods Attended: 32</div>
           <div class="absent_periods_maths">Periods Absent: 4</div> 
@@ -128,8 +143,8 @@
             Remove Absent
           </div>
         </div>
-        <p>PROGRAM FOR PROBLEM SOLVING</p>
-        <p class="sub_percentage4">Percentage: 85%</p>
+        <p id="mech">BASIC MECH</p>
+        <p class="sub_percentage4 percent">Percentage: 85%</p>
         <div class="sub_prog">
           <div class="attended_periods_prog">Periods Attended: 32</div>
           <div class="absent_periods_prog">Periods Absent: 4</div> 
@@ -160,8 +175,8 @@
             Remove Absent
           </div>
         </div>
-        <p>TAMIL</p>
-        <p class="sub_percentage5">Percentage: 85%</p>
+        <p id="english">ENGLISH</p>
+        <p class="sub_percentage5 percent">Percentage: 85%</p>
         <div class="sub_tamil">
           <div class="attended_periods_tamil">Periods Attended: 32</div>
           <div class="absent_periods_tamil">Periods Absent: 4</div> 
@@ -195,8 +210,8 @@
       </div>
       <p>Lab Attendance</p>
       <div class="lab">
-        <p>COMMUNICATION LAB</p>
-        <p class="sub_percentage6">Percentage: 85%</p>
+        <p id="physicslab">PHYSICS LAB</p>
+        <p class="sub_percentage6 percent">Percentage: 85%</p>
         <div class="lab_comm">
           <div class="attended_periods_comm">Periods Attended: 32</div>
           <div class="absent_periods_comm">Periods Absent: 4</div> 
@@ -227,8 +242,8 @@
             Remove Absent
           </div>
         </div>
-        <p>ELECTRICAL LAB</p>
-        <p class="sub_percentage7">Percentage: 85%</p>
+        <p id="chemistrylab">CHEMISTRY LAB</p>
+        <p class="sub_percentage7 percent">Percentage: 85%</p>
         <div class="lab_elec">
           <div class="attended_periods_elec">Periods Attended: 32</div>
           <div class="absent_periods_elec">Periods Absent: 4</div> 
@@ -259,8 +274,8 @@
             Remove Absent
           </div>
         </div>
-        <p>WORKSHOP LAB</p>
-        <p class="sub_percentage8">Percentage: 85%</p>
+        <p id="graphics">ENGG GRAPHICS</p>
+        <p class="sub_percentage8 percent">Percentage: 85%</p>
         <div class="lab_workshop">
           <div class="attended_periods_workshop">Periods Attended: 32</div>
           <div class="absent_periods_workshop">Periods Absent: 4</div> 
@@ -291,7 +306,8 @@
             Remove Absent
           </div>
         </div>
-        <p>Extras</p>
+        <p id="programminglab">PROGRAMMING LAB</p>
+        <p class="sub_percentage9 percent">Percentage: 85%</p>
         <div class="extras">
           <div class="attended_periods_extras">Periods Attended: 32</div>
           <div class="absent_periods_extras">Periods Absent: 4</div> 
@@ -322,10 +338,11 @@
             Remove Absent
           </div>
         </div>
-
       </div>
+      <a href="#top" class="subject_id to_top">
+        To Top
+      </a>
     </div>
-
     <script src="Attendance.js"></script>
   </body>
 </html>
