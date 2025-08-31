@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   background-color: black;
   color: white;
@@ -37,6 +41,7 @@ p{
   border-right: none;
   padding-bottom: 30px;
   padding-top: 20px;
+  margin-top: 10px;
 }
 
 .total_periods, .periods_percentage{
@@ -88,6 +93,29 @@ p{
   transition: background-color 0.5s;
   user-select: none;
 }
+
+.subject_id_container{
+  display: flex;
+  justify-content: center;
+}
+
+.subject_id{
+  color: white; 
+  text-decoration: none;
+  background-color: rgb(59, 59, 59);
+  padding: 10px 20px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-family: Doto;
+  transition: background-color 0.5s;
+  user-select: none;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+.subject_id:hover {
+  background-color: rgba(0, 195, 255, 0.466);
+}
+
 .add_absent, .remove_present, .remove_absent{
   margin-left: 20px;
 }
@@ -100,9 +128,16 @@ p{
   background-color: rgba(255, 119, 95, 0.356);
 }
 
-.sub_percentage1,.sub_percentage2,.sub_percentage3,.sub_percentage4,.sub_percentage5,.sub_percentage6,.sub_percentage7,.sub_percentage8{
+.percent{
   color:rgb(155, 228, 155);
   font-size: 25px;
   font-family: Doto;
   font-weight: bold;
+}
+
+.to_top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 105;
 }
