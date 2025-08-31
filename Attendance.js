@@ -250,6 +250,7 @@ function update_attendance(classname, button){
   comm_percentage = Math.round(((comm_attendance.present)/((comm_attendance.present + comm_attendance.absent)))*100) || 0;
   elec_percentage = Math.round(((elec_attendance.present)/((elec_attendance.present + elec_attendance.absent)))*100) || 0;
   workshop_percentage = Math.round(((workshop_attendance.present)/((workshop_attendance.present + workshop_attendance.absent)))*100) || 0;
+  extras_percentage = Math.round(((extras_attendance.present)/((extras_attendance.present + extras_attendance.absent)))*100) || 0;
 
 
   localStorage.setItem('total_attendance',JSON.stringify(total_attendance));
@@ -271,7 +272,7 @@ function update_attendance(classname, button){
   localStorage.setItem('comm_percentage', comm_percentage.toString());
   localStorage.setItem('elec_percentage', elec_percentage.toString());
   localStorage.setItem('workshop_percentage', workshop_percentage.toString());
-
+  localStorage.setItem('extras_percentage', workshop_percentage.toString());
 
   document.querySelector('.periods_percentage').innerHTML = `Percentage: ${percentage}%`;
   document.querySelector('.sub_percentage1').innerHTML = `Percentage: ${phy_percentage}%`;
@@ -282,6 +283,7 @@ function update_attendance(classname, button){
   document.querySelector('.sub_percentage6').innerHTML = `Percentage: ${comm_percentage}%`;
   document.querySelector('.sub_percentage7').innerHTML = `Percentage: ${elec_percentage}%`;
   document.querySelector('.sub_percentage8').innerHTML = `Percentage: ${workshop_percentage}%`;
+  document.querySelector('.sub_percentage9').innerHTML = `Percentage: ${extras_percentage}%`;
 
 }
 let total_attendance = JSON.parse(localStorage.getItem('total_attendance')) || {
@@ -376,3 +378,4 @@ document.querySelector('.sub_percentage1').innerHTML = `Percentage: ${phy_percen
   document.querySelector('.sub_percentage6').innerHTML = `Percentage: ${comm_percentage}%`;
   document.querySelector('.sub_percentage7').innerHTML = `Percentage: ${elec_percentage}%`;
   document.querySelector('.sub_percentage8').innerHTML = `Percentage: ${workshop_percentage}%`;
+  document.querySelector('.sub_percentage9').innerHTML = `Percentage: ${extras_percentage}%`;
