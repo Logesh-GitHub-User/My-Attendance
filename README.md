@@ -17,3 +17,6 @@ A simple web app to track attendance for different subjects and labs.
 2. Use the buttons (+Present, +Absent, -Present, -Absent) to update counts.
 3. The percentage updates instantly.
 
+## 🛠 Needed Improvements
+1. Remove redundant and repetitive code to improve readability and maintainability.
+2. Break the single large file into multiple smaller files for better modularity and structure.
