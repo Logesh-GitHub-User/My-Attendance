@@ -1,4 +1,4 @@
-# My Attendance
+# My Attendance (STATIC WEBSITE)
 
 A simple web app to track attendance for different subjects and labs.
 
@@ -20,3 +20,4 @@ A simple web app to track attendance for different subjects and labs.
 ## 🛠 Needed Improvements
 1. Remove redundant and repetitive code to improve readability and maintainability.
 2. Break the single large file into multiple smaller files for better modularity and structure.
+3. ake the website dynamic by asking users to enter subject names.
