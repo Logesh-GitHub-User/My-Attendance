@@ -2,7 +2,7 @@
 
 A simple web app to track attendance for different subjects and labs.
 
-👉 **Live Demo**: [My Attendance](https://logesh-github-user.github.io/My_Attendance/)
+👉 **Live Demo**: [My Attendance](https://logesh-github-user.github.io/My-Attendance/)
 
 ## Features
 
